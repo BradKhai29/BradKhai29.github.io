@@ -1,0 +1,110 @@
+header{
+      display: flex;
+      justify-content: space-between;
+}
+
+header div{
+      display: flex;
+}
+
+span{
+      display: inline-block;
+}
+
+button{
+      padding: 1.6rem 2rem;
+      border: 0.2rem solid black;
+      background-color: cadetblue;
+      font-size: 2rem;
+      font-weight: bold;
+}
+
+button:hover{
+      background-color: rgb(123, 190, 192);
+}
+
+header a{
+      display: inline-block;
+      justify-content: left;
+      padding: 2rem 4rem;
+      background-color: black;
+      color: blanchedalmond;
+      font-size: 2rem;
+      letter-spacing: 0.2rem;
+      font-weight: bolder;
+}
+
+header a:hover{
+      padding-left: 3rem;
+      background-color: grey;
+}
+
+form{
+      width: 84%;
+      margin: 0 auto;
+      padding: 10rem;
+      background-color: darkseagreen;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+label{
+      display: inline-block;
+      padding: 1rem 2rem;
+      background-color: darkslateblue;
+      color: rgb(210, 213, 211);
+      font-weight: bold;
+      font-size: 2rem;
+      border-top-left-radius: 0.4rem;
+      border-bottom-left-radius: 0.4rem;
+}
+
+input{
+      display: inline-block;
+      padding: 1rem 2rem;
+      width: 64rem;
+      font-size: 2rem;
+      border-top-right-radius: 0.4rem;
+      border-bottom-right-radius: 0.4rem;      
+}
+
+#list{
+      width: 84%;
+      margin: 0 auto;
+      text-align: center;
+      background-color: aquamarine;
+      padding: 4rem 0rem;
+      border-radius: 0.56rem;
+}
+
+h1{
+      display: inline-block;
+      padding: 1rem 2rem;
+      border: 0.2rem solid black;
+}
+
+.block{
+      background-color: black;
+      color: aliceblue;
+      font-size: 2rem;
+      padding: 1rem 2rem;
+      border: 0.4rem solid gainsboro;
+      margin: 2rem 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+}
+
+.block button{
+      border-radius: 2rem;
+}
+
+.container{
+      width: 84%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+}

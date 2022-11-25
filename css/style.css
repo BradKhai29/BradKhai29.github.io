@@ -1,0 +1,761 @@
+:root{
+      --default-size: 1.7rem;
+      --navbar-height: 4.85rem;
+      --default-weight: 500;
+      --hover-nav-color: rgb(137, 152, 164);
+}
+
+li{
+      list-style: none;
+}
+
+img{
+      width: 99.9vw;
+}
+
+/* Header section */
+.blur{
+      display: none;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      background-color: rgba(67, 64, 64, 0.3);
+}
+/* Navbar section */
+#navbar{
+      /* Position style */
+      position: fixed;
+      display: flex;
+      justify-content: space-between;
+      top: 0;
+      z-index: 0;
+      height: var(--navbar-height);
+      width: 100%;
+      background-color: black;
+      box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
+}
+/* Left navbar */
+.left-navbar{
+      display: flex;
+      height: var(--navbar-height);
+      flex-direction: row;
+}
+
+/* Navbar text */
+.navbar-text:hover{
+      background-color: var(--hover-nav-color);
+      color: black;
+}
+
+.navbar-text{
+      display: flex;
+      font-size: var(--default-size);
+      font-weight: var(--default-weight);
+      padding: 1.4rem 2.4rem;
+      align-items: center;
+      justify-content: center;
+      color: aliceblue;
+      height: var(--navbar-height);
+}
+
+#drop-down-box{
+      position: relative;
+      display: flex;
+      align-items: center;
+      font-size: var(--default-size);
+      color: aliceblue;
+      padding: 1.4rem 2.4rem;
+      height: var(--navbar-height);
+}
+
+#drop-down-box:hover .drop-down-details{
+      background-color: var(--hover-nav-color);
+      color: black;
+      display: block;
+      
+}
+
+#drop-down-box:hover{
+      background-color: var(--hover-nav-color);
+      color: black;
+}
+
+.drop-down{
+      font-size: var(--default-size);
+      font-weight: var(--default-weight);
+
+}
+
+/* drop down style */
+.drop-down-details{
+      position: absolute;
+      left: 0;
+      top: var(--navbar-height);
+      display: none;
+      flex-direction: column;
+      box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
+}
+
+.drop-down-element{
+      display: flex;
+      text-align: left;
+      background-color: rgb(248, 248, 248);
+      color: rgb(9, 12, 15);
+      font-size: var(--default-size);
+      font-weight: var(--default-weight);
+      padding: 1.6rem 2.4rem;
+}
+
+.drop-down-element:hover{
+      background-color: var(--hover-nav-color);
+      color: black;
+}
+
+/* right navbar */
+.right-navbar {
+      display: flex;
+      height: var(--navbar-height);
+      align-items: center;
+      justify-content: center;
+      font-size: 1.6rem;
+      color: aliceblue;
+}
+
+.right-navbar:hover{
+      background-color: rgb(189, 65, 65);
+      color: aliceblue;
+}
+
+.right-navbar .menu{
+      display: none;
+}
+
+.right-navbar .icon{
+      padding: 1.2rem 2.4rem;
+      display: inline-block;
+}
+
+/* Main section */
+.slider{
+      margin-top: 4rem;
+      position: relative;
+      width: 100%;
+      z-index: -1;
+}
+
+.slider img{
+      width: 100%;
+}
+
+.slider-text{
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      transform: translate(-50%, 0%);
+      color: aliceblue;
+      font-size: var(--default-size);
+      margin-bottom: 4rem;
+      width: 50%;
+}
+
+.slider-text > .text{
+      text-align: center;
+}
+
+h5.text {
+      text-decoration: none;
+      font-weight: 100;
+      font-size: 2.6rem;
+      margin: 1.6rem 0;
+}
+
+p.text{
+      font-size: 1.8rem;
+      margin: 1.2rem 0;
+}
+
+
+/* About section styling */
+.about{
+      width: 54%;
+      margin: 0 auto;
+      margin-top: 8.8rem;
+}
+
+.about-text {
+      text-align: center;
+}
+
+.about-text > h2{
+      text-decoration: none;
+      font-size: 4rem;
+      font-family: sans-serif; 
+      font-weight: lighter;
+      text-transform: uppercase;
+      padding: 1.2rem 0;
+      line-height: 4.8rem;
+}
+
+.about-text > h3{
+      font-size: 1.6rem;
+      color: rgb(160, 160, 160);
+      font-weight: lighter;
+      padding: 1.2rem 0;
+      font-style: italic;
+}
+
+.main-text{
+      margin-top: 0.8rem;
+      font-size: 1.6rem;
+      text-align: justify;
+      line-height: 2.4rem;
+}
+
+.about-image{
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      margin: 4.4rem 0;
+      align-items: center;
+      justify-content: space-between;
+}
+
+.about-image .image{
+      width: 30%;
+      text-align: center;
+      font-size: 1.8rem;
+      font-weight: lighter;
+}
+
+.about-image .image > img{
+      width: 72%;
+      border-radius: 0.64rem;
+}
+
+.image > h5{
+      margin: 1.2rem 0;
+      font-size: 1.7rem;
+      font-weight: 100;
+}
+
+/* Tour style section */
+.tour{
+      color: aliceblue;
+      background-color: rgb(4, 3, 3);
+      text-align: center;
+}
+
+.inner-tour{
+      width: 48%;
+      margin: 0 auto;
+      padding: 6.4rem 0;
+}
+
+.inner-tour > h2{
+      font-size: 2.8rem;
+      font-weight: lighter;
+      margin: 2.4rem 0;
+      letter-spacing: 0.36rem;
+}
+
+.inner-tour > h4{
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: grey;
+      font-style: italic;
+      padding-bottom: 2.44rem;
+}
+
+.ticket-list{
+      color: gray;
+      background-color: rgb(252, 252, 252);
+      margin-bottom: 3.6rem;
+}
+
+.ticket-list-member{
+      display: flex;
+      padding: 0.8rem 1.6rem;
+      font-size: 1.54rem;
+      justify-content: space-between;
+      border-bottom: 0.1rem solid rgb(202, 207, 211);
+}
+
+.ticket-list-member > p{
+      display: inline-block;
+}
+
+.ticket-descritpt{
+      display: inline-block;
+      background-color: rgb(219, 50, 50);
+      padding: 0.24rem 0.56rem;
+      color: aliceblue;
+      margin: 0 2rem;
+}
+
+.ticket-remaining{
+      background-color: rgb(39, 39, 39);
+      border-radius: 2rem;
+      padding: 0.24rem 0.8rem;
+      color: aliceblue;
+      margin: 0 4rem;
+}
+
+.buy-ticket{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+}
+
+.ticket-box{
+      display: flex;
+      height: 88%;
+      width: 32%;
+      flex-direction: column;
+      background-color: rgb(253, 253, 253);
+      color:rgb(4, 3, 3);
+      text-align: left;
+      padding-bottom: 2rem;
+}
+
+.ticket-box > img{
+      width: 100%;
+}
+
+.ticket-details{
+      width: 86%;
+      height: 100%;
+      margin: 0 auto;
+}
+
+.ticket-heading{
+      text-align: left;
+      padding: 2rem 0;
+      font-size: 1.5rem;
+}
+
+.ticket-date {
+      text-align: left;
+      color: grey;
+      padding-bottom: 2rem;
+      font-weight: lighter;
+      font-size: 1.54rem;
+}
+
+.ticket-content{
+      text-align: left;
+      color: rgb(8, 7, 7);
+      padding-bottom: 2rem;
+      font-weight: 500;
+      font-size: 1.5rem;
+}
+
+.button{
+      display: inline-block;
+      background-color: black;
+      color: whitesmoke;
+      padding: 1rem 1.6rem;
+      font-size: 1.54rem;
+}
+
+.button:hover{
+      background-color: rgb(166, 166, 166);
+      color: black;
+}
+
+.contact-section{
+      background-color: white;
+      color: black;
+}
+
+.contact{
+      width: 48%;
+      margin: 0 auto;
+      padding: 6.4rem 0;
+}
+
+.contact > h4{
+      margin-bottom: 2.8rem;
+      font-size: 2.8rem;
+      letter-spacing: 0.36rem;
+      font-weight: lighter;
+}
+
+.contact > h3{
+      margin-bottom: 1.6rem;
+      font-size: 1.56rem;
+      font-weight: lighter;
+      color: rgb(179, 179, 179);
+      font-style: italic;
+}
+
+.contact-box{
+      margin-top: 3.2rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+}
+
+.left-contact-box, .right-contact-box{
+      text-align: left;
+      width: 50%;
+}
+
+.contact-details > i{
+      display: inline-block;
+      width: 3.2rem;
+}
+
+.contact-details{
+      font-size: 1.8rem;
+      line-height: 2.8rem;
+}
+
+.upper-input{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+}
+
+#form{
+      width: 100%;
+}
+
+.input-area {
+      width: 48%;
+      padding: 1rem 2rem;
+      border: 0.1rem solid rgb(183, 183, 183);
+      border-radius: 0.2rem;
+}
+
+#message{
+      width: 100%;
+      margin-top: 1rem;
+      padding: 1rem 2rem;
+      border: 0.1rem solid rgb(183, 183, 183);
+      border-radius: 0.2rem;
+      display: block;
+}
+
+.button-container{
+      width: 100%;
+      text-align: right;
+}
+
+.button-container .button{
+      margin-top: 2rem;
+}
+
+/* Map section style */
+.map{
+      width: 100%;
+}
+
+.map > img{
+      width: 100%;
+}
+/* Footer section */
+#footer{
+      text-align: center;
+      font-size: 2.4rem;
+      padding: 6.4rem 1.6rem;
+      color: grey;
+}
+
+.footer-icon a, .footer-icon p{
+      text-decoration: none; 
+      color: gray;
+      display: inline;
+      font-size: 3rem;
+}
+
+.footer-icon a p{
+      display: none;
+}
+
+.footer-icon a:hover{
+      color: rgb(88, 87, 87);
+}
+
+.medium{
+      padding: 2rem 0rem;
+      font-size: 1.4rem;
+      text-decoration: none;
+      color: grey;
+}
+
+.medium a {
+      color: grey;
+      text-decoration: underline;
+}
+
+/* Style pop up ticket register*/
+
+.ticket-register{
+      display: none;
+      width: 56%;
+      position: fixed;
+      z-index: 1;
+      top: 9rem;
+      left: 50%;
+      transform: translate(-50%, 0%);
+      box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
+}
+
+.ticket-header{
+      background-color: #009688;
+      text-align: center;
+}
+
+.close{
+      display: flex;
+      justify-content: right;
+      align-items: center;
+}
+
+.close-button{
+      background-color: inherit;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: aliceblue;
+      font-size: 2rem;
+      padding: 1.4rem 1.6rem;
+}
+
+.close-button > p{
+      display: none;
+}
+
+.close .close-button:hover{
+      background-color: rgb(168, 168, 168);
+      border-bottom-left-radius: 0.64rem;
+}
+
+.ticket-header .ticket-content{
+      text-align: center;
+      color: aliceblue;
+      font-size: 3.2rem;
+      padding-bottom: 4.4rem;
+      font-weight: lighter;
+      letter-spacing: 0.4rem;
+}
+
+.ticket-content > i::after{
+      content: " ";
+      padding-left: 0.4rem;
+}
+
+/* ticket main content */
+.ticket-main-container{
+      background-color: white;
+}
+
+.ticket-main{
+      width: 96.4%;
+      margin: 0 auto;
+}
+
+.ticket-main > label{
+      display: block;
+      text-align: left;
+      font-size: 1.4rem;
+      color: black;
+      padding: 2rem 0;
+      font-weight: 600;
+}
+
+.ticket-main label i{
+      padding-right: 0.64rem;
+}
+
+#amount, #send-to{
+      display: block;
+      width: 100%;
+      padding: 1.2rem 1.6rem;
+      border: 0.16rem solid rgb(167, 162, 162);
+      border-radius: 0.2rem;
+}
+
+#amount:focus, #send-to:focus{
+      border: 0.16rem solid rgb(12, 8, 8);
+}
+
+/* pay button style */
+.pay-button{
+      margin-top: 1.6rem;
+      display: block;
+      width: 100%;
+      text-align: center;
+      padding: 1.6rem;
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: white;
+      background-color: #009688;
+}
+
+.pay-button:hover{
+      background-color: #2dbaac;
+}
+
+.pay-button > i{
+      padding-left: 0.2rem;
+      font-weight: bolder;
+      font-size: 1.6rem;
+}
+
+.inner-ticket-container{
+      display: flex;
+      width: 100%;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 3.6rem 0 2rem;
+}
+
+.inner-ticket-container .close-button{
+      background-color: rgb(250, 72, 72);
+      font-size: 1.36rem;
+      font-weight: bold;
+      padding: 1.2rem 1.6rem;
+}
+
+.inner-ticket-container .close-button:hover{
+      background-color: rgb(255, 134, 134);
+}
+
+.inner-ticket-container .close-button > i{
+      padding-left: 0.4rem;
+      font-size: 1.4rem;
+}
+
+.inner-ticket-container p{
+      font-size: 1.5rem;
+      color: black;
+}
+
+.inner-ticket-container a {
+      padding-left: 0.4rem;
+      color: #428ae8;
+      text-decoration: underline;
+      font-weight: bold;
+}
+
+/* Media query section */
+@media screen and (max-width: 1010px){
+      .contact{
+            width: 84%;
+      }
+}
+
+
+@media screen and (min-width: 630px){
+      .navbar-text{
+            display: inline-block !important;
+      }
+}
+
+@media screen and (max-width: 720px) {
+      /* about section */
+      .slider-text{
+            display: none;
+      }
+
+      .about{
+            width: 84%;
+      }
+
+      .about-image{
+            flex-direction: column;
+      }
+
+      .about-image .image{
+            width: 88%;
+      }
+
+      .inner-tour, .ticket-register{
+            width: 90%;
+      }
+
+      .ticket-register{
+            top: 5.4rem;
+      }
+      
+      .buy-ticket{
+            flex-direction: column;
+      }
+
+      .ticket-box{
+            width: 100%;
+            margin-bottom: 2rem;
+      }
+
+      .contact{
+            flex-direction: column;
+      }
+
+      .contact-box{
+            flex-direction: column;
+      }
+
+      .left-contact-box{
+            width: 100%;
+            margin-bottom: 2rem;
+      }
+
+      .right-contact-box, .upper-input{
+            width: 100%;
+            flex-direction: column;
+      }
+
+      .input-area{
+            width: 100%;
+            margin-bottom: 0.4rem;
+      }
+
+      #message{
+            margin: 0;
+      }
+}
+
+@media screen and (min-width: 720px) and (max-width: 800px){
+      .inner-tour{
+            width: 64%;
+      }
+}
+
+@media screen and (max-width: 630px) {
+      .right-navbar {
+            padding: 0;
+      }
+
+      .right-navbar .menu{
+            display: inline-block;
+            padding: 1.6rem 2.4rem;
+      }
+
+      .right-navbar .menu:hover{
+            background-color: rgb(189, 65, 65);
+      }
+
+      .right-navbar .icon{
+            display: none;
+      }
+
+      .left-navbar{
+            flex-direction: column;
+      }
+
+      .navbar-text, #drop-down-box{
+            display: none;
+            width: 100%;
+            justify-content: left;
+            background-color: black;
+      }
+
+      .navbar-text:first-of-type{
+            display: inline-block;
+      }
+}
